@@ -10,10 +10,10 @@ II.
 O enunciado deste trabalho foi adaptado de um dos trabalhos da disciplina de Projeto e
 Análise de Algoritmos do Prof. David Menotti Gomes (DECOM/UFOP).
 Implementação e Análise de Algoritmos de Ordenação por Comparações de Chaves
-<p> 1. Descrição
+1. Descrição
 Neste trabalho, você deverá implementar algoritmos não-eficientes (BubbleSort, InsertionSort e
 SelectionSort) e eficientes (QuickSort, HeapSort e MergeSort) para ordenar sequências de
-elementos. </p> 
+elementos. 
 Você deverá utilizar implementações dos algoritmos citados onde a sequência de dados a ser
 ordenada pode estar representada por arranjos (vetores) ou apontadores. Lembre-se que as
 implementações dos algoritmos de ordenação estão disponíveis nos slides de aula da disciplina
