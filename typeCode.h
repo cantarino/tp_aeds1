@@ -14,6 +14,7 @@ typedef struct TipoItem {
 } TipoItem;
 
 typedef int TipoIndice;
+
 typedef TipoItem TipoVetor[MAXTAM + 1];
 // MAXTAM + 1 por causa da sentinela em Insercao
 TipoVetor A;
