@@ -11,6 +11,8 @@ Data:15/11/2018
 #include <stdio.h>
 #include "item.h"
 #include "bubbleSort.h"
+#include "selectionSort.h"
+#include "isertionSort.h"
 
 int main() {
     TipoItem * A;
