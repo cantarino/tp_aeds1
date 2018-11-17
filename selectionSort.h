@@ -16,15 +16,15 @@ void Selecao(TipoItem *A, int n){
 
     TipoItem x;
 
-    for (i = 1; i <= n -1; i++){
+    for (i = 0; i <= n -1; i++){
         min = i;
-        for (j = i+1; j < n ; j++) {
-            if(A[i].Chave < A[min].Chave)
+        for (j = i+1; j < n ; j++)
+            if(A[j].Chave < A[min].Chave)
                 min = j;
             x = A[min];
             A[min] = A[i];
             A[i] = x;
-        }
+
     }
 }
 
