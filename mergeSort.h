@@ -8,6 +8,7 @@ Descricao do programa:Arquivo principal aonde os algoritmos serão executados
 Data:15/11/2018
 ************************************************/
 // codigo baseado no site https://www.geeksforgeeks.org/merge-sort/
+
 #include "item.h"
 #include <stdio.h>
 
@@ -64,7 +65,7 @@ void merge (TipoItem *A, int l, int m, int r){
 
 void mergeSort(TipoItem *a, int l, int r){
     if (l < r){
-        int m = l+(r-1)/2;
+        int m = (l+r-1)/2;
 
         mergeSort(a,l,m);
         mergeSort(a,m+1,r);
