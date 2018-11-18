@@ -14,6 +14,7 @@ Data:15/11/2018
 #include "selectionSort.h"
 #include "isertionSort.h"
 #include "mergeSort.h"
+#include "heapSort.h"
 
 int main() {
     TipoItem * A;
@@ -21,7 +22,7 @@ int main() {
     printf("Digite quantos itens deseja em seu arranjo:");
     scanf("%d",&n);
     A = geraItensAleatorios(n);
-    mergeSort(A, 0, n-1);
+    heapSort(A, n);
     Imprime(A,n);
     return 0;
 }
