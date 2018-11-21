@@ -8,7 +8,7 @@ Matricula:201722040130
 Descricao do programa:Algoritmo de ordenacao bubble sort
 Data:14/11/2018
 ************************************************/
-
+//otimização do bublesort retirado do site https://www.geeksforgeeks.org/bubble-sort/
 
 #include <stdio.h>
 #include "item.h"
@@ -16,19 +16,29 @@ Data:14/11/2018
 #ifndef bubbleSort_h
 #define bubbleSort_h
 
-void Bubblesort(TipoItem *A, int tam){
-   int i, j;
-   TipoItem aux;
-   //Ao final de cada iteracao o j-esimo maior item e colocado na n-j posicao
-   for (j=0; j<tam-1; j++){
-      for (i=0; i<tam-1; i++){
-         //Se o item for maior que o sucessor, troca
-         if (A[i].Chave > A[i+1].Chave){
-            aux = A[i];
-            A[i] = A[i+1];
-            A[i+1] = aux;
-         }
+
+void swap(TipoItem *a,  TipoItem *b){
+   TipoItem temp = *a;
+   *a = *b;
+   *b = temp;
+}
+
+
+void bubbleSort(TipoItem *a, int n){
+   //set 0 = false, 1 = true;
+   int i, j, swapped;
+
+   for(i = 0;  i < n-1;i++){
+      swapped = 0;
+      for(j=0 ; j < n-i-1; j++){
+          if (a[j].Chave > a[j+1].Chave) {
+              swap(&a[j], &a[j + 1]);
+              swapped = 1;
+          }
       }
+
+      if (swapped == 0)
+         break;
    }
 }
 
