@@ -13,7 +13,7 @@ void verificaOrdenacao (TipoItem *a, int n){
     int j = 1;
 
     for (i = 0; i < n; i++){
-        if (a[i].Chave < a[i+1].Chave) {
+        if (a[i].Chave <= a[i+1].Chave) {
             j++;
         }
     }
@@ -21,7 +21,7 @@ void verificaOrdenacao (TipoItem *a, int n){
     if(j == n){
         printf("Vetor Ordenado\n");
     } else {
-        printf("Vetor Não Ordenado\n");
+        printf("Vetor Não Ordenado\n\n");
     }
 }
 
